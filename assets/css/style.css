@@ -1,0 +1,62 @@
+/* Google Fonts font-family: 'Fascinate', cursive; for h1,
+ font-family: 'Joan', serif; for the rest */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Joan&display=swap');
+
+:root {
+    background-color: rgb(0, 158, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Joan', serif;
+}
+
+h1 {
+    font-size: 5.4rem;
+    font-family: 'Fascinate', cursive;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+/* Box */
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-coulmn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* class not added yet */
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

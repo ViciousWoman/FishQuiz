@@ -1,14 +1,13 @@
 body {
     color: #fff;
 }
-
+/* answer boxes */
 .answer-container {
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background: radial-gradient(circle, rgba(0,158,255,0.91) 14%, 
-    rgba(182,54,180,1) 82%);
+    background: rgb(182,54,180);
     font-size: 3rem;
     min-width: 80rem;
 }
@@ -29,14 +28,46 @@ transform: transform 100ms;
     padding: 2rem;
     width: 100%;
 }
-
+/* correct/incorrect styles */
 .correct {
-    border: 0.5rem solid green;
+    background: radial-gradient(circle, rgba(0,255,0,1) 14%, rgba(40,255,111,1) 82%);
 }
 
 .incorrect {
-    border: 0.5rem solid red;
+    background: radial-gradient(circle, rgba(255,0,0,1) 14%, rgba(255,40,40,1) 82%);
 }
+
+/* Game Hud */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid greenyellow;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background-color: greenyellow;
+    width: 0;
+}
+
+
 
 @media screen and (max-width:768px) {
     .answer-container {
